@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<g class="pc-trace">
+<path d="M 920 200 L 1040 160 L 1120 160 L 1240 160 L 1240 240 L 1240 360 L 1240 240 L 1240 160 L 1200 200"/>
+<path d="M 480 360 L 440 560 L 520 560 L 680 560 L 520 560 L 440 560 L 520 480 L 520 560 L 480 600"/>
+<path d="M 520 480 L 600 440 L 600 520 L 600 560 L 680 560 L 800 600"/>
+<path d="M 440 240 L 320 200 L 440 200 L 520 120 L 600 120 L 560 160"/>
+<path d="M 640 200 L 680 160 L 600 160 L 440 160 L 360 160 L 200 160 L 120 240 L 120 360 L 200 360 L 400 400"/>
+<path d="M 320 680 L 280 640 L 360 640 L 360 720 L 440 720 L 520 760"/>
+<path d="M 1040 400 L 1120 360 L 1200 360 L 1280 360 L 1160 360 L 1080 360 L 1080 280 L 1120 480"/>
+<path d="M 160 680 L 120 720 L 200 720 L 280 720 L 320 640"/>
+<path d="M 560 240 L 680 200 L 680 120 L 520 120 L 600 120 L 600 200 L 640 240"/>
+</g>
+<g class="pc-glow">
+<path d="M 920 200 L 1040 160 L 1120 160 L 1240 160 L 1240 240 L 1240 360 L 1240 240 L 1240 160 L 1200 200" style="--pd:0.0s"/>
+<path d="M 480 360 L 440 560 L 520 560 L 680 560 L 520 560 L 440 560 L 520 480 L 520 560 L 480 600" style="--pd:0.9s"/>
+<path d="M 520 480 L 600 440 L 600 520 L 600 560 L 680 560 L 800 600" style="--pd:1.8s"/>
+<path d="M 440 240 L 320 200 L 440 200 L 520 120 L 600 120 L 560 160" style="--pd:2.7s"/>
+<path d="M 640 200 L 680 160 L 600 160 L 440 160 L 360 160 L 200 160 L 120 240 L 120 360 L 200 360 L 400 400" style="--pd:3.6s"/>
+<path d="M 320 680 L 280 640 L 360 640 L 360 720 L 440 720 L 520 760" style="--pd:4.5s"/>
+<path d="M 1040 400 L 1120 360 L 1200 360 L 1280 360 L 1160 360 L 1080 360 L 1080 280 L 1120 480" style="--pd:5.4s"/>
+<path d="M 160 680 L 120 720 L 200 720 L 280 720 L 320 640" style="--pd:6.3s"/>
+<path d="M 560 240 L 680 200 L 680 120 L 520 120 L 600 120 L 600 200 L 640 240" style="--pd:7.2s"/>
+</g>
+<g class="pc-pulse">
+<path d="M 920 200 L 1040 160 L 1120 160 L 1240 160 L 1240 240 L 1240 360 L 1240 240 L 1240 160 L 1200 200" style="--pd:0.0s"/>
+<path d="M 480 360 L 440 560 L 520 560 L 680 560 L 520 560 L 440 560 L 520 480 L 520 560 L 480 600" style="--pd:0.9s"/>
+<path d="M 520 480 L 600 440 L 600 520 L 600 560 L 680 560 L 800 600" style="--pd:1.8s"/>
+<path d="M 440 240 L 320 200 L 440 200 L 520 120 L 600 120 L 560 160" style="--pd:2.7s"/>
+<path d="M 640 200 L 680 160 L 600 160 L 440 160 L 360 160 L 200 160 L 120 240 L 120 360 L 200 360 L 400 400" style="--pd:3.6s"/>
+<path d="M 320 680 L 280 640 L 360 640 L 360 720 L 440 720 L 520 760" style="--pd:4.5s"/>
+<path d="M 1040 400 L 1120 360 L 1200 360 L 1280 360 L 1160 360 L 1080 360 L 1080 280 L 1120 480" style="--pd:5.4s"/>
+<path d="M 160 680 L 120 720 L 200 720 L 280 720 L 320 640" style="--pd:6.3s"/>
+<path d="M 560 240 L 680 200 L 680 120 L 520 120 L 600 120 L 600 200 L 640 240" style="--pd:7.2s"/>
+</g>
+<g class="pc-pad">
+<rect x="912" y="192" width="16" height="16" rx="2"/>
+<rect x="472" y="352" width="16" height="16" rx="2"/>
+<rect x="512" y="472" width="16" height="16" rx="2"/>
+<rect x="432" y="232" width="16" height="16" rx="2"/>
+<rect x="632" y="192" width="16" height="16" rx="2"/>
+<rect x="312" y="672" width="16" height="16" rx="2"/>
+<rect x="1032" y="392" width="16" height="16" rx="2"/>
+<rect x="152" y="672" width="16" height="16" rx="2"/>
+<rect x="552" y="232" width="16" height="16" rx="2"/>
+</g>
+<g class="pc-via">
+<circle cx="1040" cy="160" r="3.4"/>
+<circle class="pc-core" cx="1040" cy="160" r="1.3"/>
+<circle cx="1240" cy="160" r="3.4"/>
+<circle class="pc-core" cx="1240" cy="160" r="1.3"/>
+<circle cx="1240" cy="360" r="3.4"/>
+<circle class="pc-core" cx="1240" cy="360" r="1.3"/>
+<circle cx="1240" cy="160" r="3.4"/>
+<circle class="pc-core" cx="1240" cy="160" r="1.3"/>
+<circle cx="440" cy="560" r="3.4"/>
+<circle class="pc-core" cx="440" cy="560" r="1.3"/>
+<circle cx="680" cy="560" r="3.4"/>
+<circle class="pc-core" cx="680" cy="560" r="1.3"/>
+<circle cx="440" cy="560" r="3.4"/>
+<circle class="pc-core" cx="440" cy="560" r="1.3"/>
+<circle cx="520" cy="560" r="3.4"/>
+<circle class="pc-core" cx="520" cy="560" r="1.3"/>
+<circle cx="600" cy="440" r="3.4"/>
+<circle class="pc-core" cx="600" cy="440" r="1.3"/>
+<circle cx="600" cy="560" r="3.4"/>
+<circle class="pc-core" cx="600" cy="560" r="1.3"/>
+<circle cx="320" cy="200" r="3.4"/>
+<circle class="pc-core" cx="320" cy="200" r="1.3"/>
+<circle cx="520" cy="120" r="3.4"/>
+<circle class="pc-core" cx="520" cy="120" r="1.3"/>
+<circle cx="680" cy="160" r="3.4"/>
+<circle class="pc-core" cx="680" cy="160" r="1.3"/>
+<circle cx="440" cy="160" r="3.4"/>
+<circle class="pc-core" cx="440" cy="160" r="1.3"/>
+<circle cx="200" cy="160" r="3.4"/>
+<circle class="pc-core" cx="200" cy="160" r="1.3"/>
+<circle cx="120" cy="360" r="3.4"/>
+<circle class="pc-core" cx="120" cy="360" r="1.3"/>
+<circle cx="280" cy="640" r="3.4"/>
+<circle class="pc-core" cx="280" cy="640" r="1.3"/>
+<circle cx="360" cy="720" r="3.4"/>
+<circle class="pc-core" cx="360" cy="720" r="1.3"/>
+<circle cx="1120" cy="360" r="3.4"/>
+<circle class="pc-core" cx="1120" cy="360" r="1.3"/>
+<circle cx="1280" cy="360" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="360" r="1.3"/>
+<circle cx="1080" cy="360" r="3.4"/>
+<circle class="pc-core" cx="1080" cy="360" r="1.3"/>
+<circle cx="120" cy="720" r="3.4"/>
+<circle class="pc-core" cx="120" cy="720" r="1.3"/>
+<circle cx="280" cy="720" r="3.4"/>
+<circle class="pc-core" cx="280" cy="720" r="1.3"/>
+<circle cx="680" cy="200" r="3.4"/>
+<circle class="pc-core" cx="680" cy="200" r="1.3"/>
+<circle cx="520" cy="120" r="3.4"/>
+<circle class="pc-core" cx="520" cy="120" r="1.3"/>
+<circle cx="600" cy="200" r="3.4"/>
+<circle class="pc-core" cx="600" cy="200" r="1.3"/>
+</g>
+</svg>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luca Telini Crozara — Currículo</title>
+<meta name="description" content="Currículo de Luca Telini Crozara, desenvolvedor backend com TypeScript e Node.js.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/cv.css">
+</head>
+<body>
+
+<main class="cv">
+
+  <!-- ============ Cabeçalho ============ -->
+  <header class="cv-head">
+    <div class="cv-identity">
+      <h1>Luca Telini Crozara</h1>
+      <p class="cv-role">Desenvolvedor Backend — TypeScript · Node.js</p>
+    </div>
+    <address class="cv-contact">
+      <span>Franca, SP — Brasil</span>
+      <a href="mailto:lucatelinic23@gmail.com">lucatelinic23@gmail.com</a>
+      <a href="https://github.com/telinii">github.com/telinii</a>
+      <a href="https://www.linkedin.com/in/luca-telini-crozara-19a609315">linkedin.com/in/luca-telini-crozara</a>
+    </address>
+  </header>
+
+  <!-- ============ Objetivo ============ -->
+  <section class="cv-section cv-section--first">
+    <h2>Objetivo</h2>
+    <p class="cv-summary">
+      Estudante de Ciência da Computação com foco em desenvolvimento backend.
+      Construo APIs REST com autenticação, autorização, modelagem de dados e
+      publicação em nuvem. Busco estágio onde eu possa contribuir em projetos
+      reais e crescer como pessoa desenvolvedora de software.
+    </p>
+  </section>
+
+  <!-- ============ Formação ============ -->
+  <section class="cv-section">
+    <h2>Formação</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Ciência da Computação — UniFACEF</h3>
+        <span class="entry-date">Em andamento</span>
+      </div>
+      <p class="entry-note">4º semestre</p>
+      <!-- TROQUE AQUI: adicione a previsão de conclusão, ex. "Previsão: 2029" -->
+    </div>
+  </section>
+
+  <!-- ============ Experiência ============ -->
+  <section class="cv-section">
+    <h2>Experiência</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>API de blog — Teckiwi</h3>
+        <span class="entry-date">Setembro de 2026</span>
+      </div>
+      <p class="entry-note">Desenvolvimento freelance</p>
+      <p>
+        API REST para um sistema de blog, encomendada pela Teckiwi. CRUD completo
+        de usuários, hash de senha e autenticação JWT, com as regras de negócio já
+        definidas pelo contratante. Stack: TypeScript, Node.js, Express, Prisma,
+        MySQL, Joi, bcrypt e JWT.
+      </p>
+      <ul class="bullets">
+        <li><strong>Autorização por recurso:</strong> cada usuário edita e apaga
+          apenas os próprios posts; a verificação acontece no servidor, e não
+          apenas na interface.</li>
+        <li><strong>Senhas nunca expostas:</strong> hash com bcrypt na gravação e
+          ausência de credenciais em qualquer resposta da API, inclusive nas
+          listagens.</li>
+        <li><strong>Sessão com expiração:</strong> token JWT nas rotas protegidas,
+          com validade definida para forçar reautenticação.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Projetos ============ -->
+  <section class="cv-section">
+    <h2>Projetos</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>hub-epi</h3>
+        <span class="entry-date">2026</span>
+      </div>
+      <p>
+        Sistema de controle de estoque de EPIs: cadastro de colaboradores e
+        equipamentos, controle de entregas, faturas, relatórios e exportação em
+        PDF. Controle de acesso por papel — administrador versus usuário comum.
+        React, TypeScript, Supabase (PostgreSQL), Zod, Vitest e PWA.
+      </p>
+      <p class="entry-links">
+        <a href="https://github.com/telinii/hub-epi">github.com/telinii/hub-epi</a>
+      </p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>maintenance-system</h3>
+        <span class="entry-date">2026</span>
+      </div>
+      <p>
+        Sistema de manutenção de máquinas agrícolas: registro de máquinas,
+        agendamento e histórico de manutenções, análise de custos com gráficos e
+        cotação de cana. Tema claro/escuro e suporte a PWA. Deploy na Vercel.
+        React, TypeScript, Tailwind, Supabase, Recharts e Vite.
+      </p>
+      <p class="entry-links">
+        <a href="https://github.com/telinii/maintenance-system">github.com/telinii/maintenance-system</a>
+      </p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <h3>blog</h3>
+        <span class="entry-date">2026</span>
+      </div>
+      <p>
+        API RESTful de blog com autenticação JWT. Senhas com hash via bcrypt,
+        resposta de login idêntica para e-mail inexistente e senha errada, token
+        com expiração de 1h e middleware de proteção de rotas. Primeiro projeto de
+        API que construí, a partir de um exercício do meu mentor. Deploy no Railway.
+        TypeScript, Express, Prisma, MySQL, Joi, JWT e bcrypt.
+      </p>
+      <p class="entry-links">
+        <a href="https://github.com/telinii/blog">github.com/telinii/blog</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ Tecnologias ============ -->
+  <section class="cv-section">
+    <h2>Tecnologias</h2>
+
+    <div class="tech-grid">
+      <div>
+        <h3>Linguagens</h3>
+        <p>TypeScript, JavaScript, SQL</p>
+      </div>
+      <div>
+        <h3>Backend</h3>
+        <p>Node.js, Express, APIs REST, Docker</p>
+      </div>
+      <div>
+        <h3>Dados</h3>
+        <p>Prisma, PostgreSQL, MySQL, Supabase</p>
+      </div>
+      <div>
+        <h3>Autenticação e validação</h3>
+        <p>JWT, bcrypt, Joi, Zod</p>
+      </div>
+      <div>
+        <h3>Ferramentas</h3>
+        <p>Git, Vercel, Railway, Vitest, Vite</p>
+      </div>
+      <div>
+        <h3>Sistema</h3>
+        <p>Linux — Ubuntu, Arch, CachyOS</p>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    ADICIONE AQUI o que ainda falta e você não me passou:
+    · Previsão de conclusão da faculdade
+    · Idiomas (ex.: Português — nativo, Inglês — intermediário)
+    · Cursos livres, workshops, certificações
+    · Disponibilidade (integral / meio período) e cidade para trabalhar
+    · Referências sob solicitação
+
+    Ao adicionar, tire a classe "cv-foot--vazio" da tag abaixo.
+  -->
+  <footer class="cv-foot cv-foot--vazio"></footer>
+
+</main>
+
+</body>
+</html>

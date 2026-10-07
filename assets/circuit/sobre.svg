@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<g class="pc-trace">
+<path d="M 680 480 L 640 280 L 640 200 L 600 200 L 520 200 L 440 200 L 640 240"/>
+<path d="M 1280 760 L 1080 720 L 1240 720 L 1080 720 L 1200 720 L 1000 760"/>
+<path d="M 400 320 L 560 280 L 560 360 L 560 480 L 640 480 L 720 480 L 720 560 L 760 640"/>
+<path d="M 720 120 L 880 80 L 960 80 L 1040 80 L 1120 80 L 1080 80 L 1240 120"/>
+<path d="M 800 240 L 760 280 L 760 360 L 760 440 L 840 440 L 960 440 L 1040 440 L 1080 440 L 1120 480"/>
+<path d="M 680 440 L 520 400 L 440 400 L 400 400 L 320 400 L 320 280 L 400 200 L 520 200 L 520 160 L 600 80 L 680 80 L 680 160 L 600 200"/>
+<path d="M 600 680 L 640 640 L 600 640 L 520 640 L 520 560 L 600 480 L 760 480 L 760 560 L 760 640 L 840 560 L 640 600"/>
+<path d="M 880 120 L 840 320 L 840 280 L 840 200 L 720 200 L 640 200 L 600 200 L 520 280 L 560 360"/>
+</g>
+<g class="pc-glow">
+<path d="M 680 480 L 640 280 L 640 200 L 600 200 L 520 200 L 440 200 L 640 240" style="--pd:0.0s"/>
+<path d="M 1280 760 L 1080 720 L 1240 720 L 1080 720 L 1200 720 L 1000 760" style="--pd:0.9s"/>
+<path d="M 400 320 L 560 280 L 560 360 L 560 480 L 640 480 L 720 480 L 720 560 L 760 640" style="--pd:1.8s"/>
+<path d="M 720 120 L 880 80 L 960 80 L 1040 80 L 1120 80 L 1080 80 L 1240 120" style="--pd:2.7s"/>
+<path d="M 800 240 L 760 280 L 760 360 L 760 440 L 840 440 L 960 440 L 1040 440 L 1080 440 L 1120 480" style="--pd:3.6s"/>
+<path d="M 680 440 L 520 400 L 440 400 L 400 400 L 320 400 L 320 280 L 400 200 L 520 200 L 520 160 L 600 80 L 680 80 L 680 160 L 600 200" style="--pd:4.5s"/>
+<path d="M 600 680 L 640 640 L 600 640 L 520 640 L 520 560 L 600 480 L 760 480 L 760 560 L 760 640 L 840 560 L 640 600" style="--pd:5.4s"/>
+<path d="M 880 120 L 840 320 L 840 280 L 840 200 L 720 200 L 640 200 L 600 200 L 520 280 L 560 360" style="--pd:6.3s"/>
+</g>
+<g class="pc-pulse">
+<path d="M 680 480 L 640 280 L 640 200 L 600 200 L 520 200 L 440 200 L 640 240" style="--pd:0.0s"/>
+<path d="M 1280 760 L 1080 720 L 1240 720 L 1080 720 L 1200 720 L 1000 760" style="--pd:0.9s"/>
+<path d="M 400 320 L 560 280 L 560 360 L 560 480 L 640 480 L 720 480 L 720 560 L 760 640" style="--pd:1.8s"/>
+<path d="M 720 120 L 880 80 L 960 80 L 1040 80 L 1120 80 L 1080 80 L 1240 120" style="--pd:2.7s"/>
+<path d="M 800 240 L 760 280 L 760 360 L 760 440 L 840 440 L 960 440 L 1040 440 L 1080 440 L 1120 480" style="--pd:3.6s"/>
+<path d="M 680 440 L 520 400 L 440 400 L 400 400 L 320 400 L 320 280 L 400 200 L 520 200 L 520 160 L 600 80 L 680 80 L 680 160 L 600 200" style="--pd:4.5s"/>
+<path d="M 600 680 L 640 640 L 600 640 L 520 640 L 520 560 L 600 480 L 760 480 L 760 560 L 760 640 L 840 560 L 640 600" style="--pd:5.4s"/>
+<path d="M 880 120 L 840 320 L 840 280 L 840 200 L 720 200 L 640 200 L 600 200 L 520 280 L 560 360" style="--pd:6.3s"/>
+</g>
+<g class="pc-pad">
+<rect x="672" y="472" width="16" height="16" rx="2"/>
+<rect x="1272" y="752" width="16" height="16" rx="2"/>
+<rect x="392" y="312" width="16" height="16" rx="2"/>
+<rect x="712" y="112" width="16" height="16" rx="2"/>
+<rect x="792" y="232" width="16" height="16" rx="2"/>
+<rect x="672" y="432" width="16" height="16" rx="2"/>
+<rect x="592" y="672" width="16" height="16" rx="2"/>
+<rect x="872" y="112" width="16" height="16" rx="2"/>
+</g>
+<g class="pc-via">
+<circle cx="640" cy="280" r="3.4"/>
+<circle class="pc-core" cx="640" cy="280" r="1.3"/>
+<circle cx="600" cy="200" r="3.4"/>
+<circle class="pc-core" cx="600" cy="200" r="1.3"/>
+<circle cx="440" cy="200" r="3.4"/>
+<circle class="pc-core" cx="440" cy="200" r="1.3"/>
+<circle cx="1080" cy="720" r="3.4"/>
+<circle class="pc-core" cx="1080" cy="720" r="1.3"/>
+<circle cx="1080" cy="720" r="3.4"/>
+<circle class="pc-core" cx="1080" cy="720" r="1.3"/>
+<circle cx="560" cy="280" r="3.4"/>
+<circle class="pc-core" cx="560" cy="280" r="1.3"/>
+<circle cx="560" cy="480" r="3.4"/>
+<circle class="pc-core" cx="560" cy="480" r="1.3"/>
+<circle cx="720" cy="480" r="3.4"/>
+<circle class="pc-core" cx="720" cy="480" r="1.3"/>
+<circle cx="880" cy="80" r="3.4"/>
+<circle class="pc-core" cx="880" cy="80" r="1.3"/>
+<circle cx="1040" cy="80" r="3.4"/>
+<circle class="pc-core" cx="1040" cy="80" r="1.3"/>
+<circle cx="1080" cy="80" r="3.4"/>
+<circle class="pc-core" cx="1080" cy="80" r="1.3"/>
+<circle cx="760" cy="280" r="3.4"/>
+<circle class="pc-core" cx="760" cy="280" r="1.3"/>
+<circle cx="760" cy="440" r="3.4"/>
+<circle class="pc-core" cx="760" cy="440" r="1.3"/>
+<circle cx="960" cy="440" r="3.4"/>
+<circle class="pc-core" cx="960" cy="440" r="1.3"/>
+<circle cx="1080" cy="440" r="3.4"/>
+<circle class="pc-core" cx="1080" cy="440" r="1.3"/>
+<circle cx="520" cy="400" r="3.4"/>
+<circle class="pc-core" cx="520" cy="400" r="1.3"/>
+<circle cx="400" cy="400" r="3.4"/>
+<circle class="pc-core" cx="400" cy="400" r="1.3"/>
+<circle cx="320" cy="280" r="3.4"/>
+<circle class="pc-core" cx="320" cy="280" r="1.3"/>
+<circle cx="520" cy="200" r="3.4"/>
+<circle class="pc-core" cx="520" cy="200" r="1.3"/>
+<circle cx="600" cy="80" r="3.4"/>
+<circle class="pc-core" cx="600" cy="80" r="1.3"/>
+<circle cx="680" cy="160" r="3.4"/>
+<circle class="pc-core" cx="680" cy="160" r="1.3"/>
+<circle cx="640" cy="640" r="3.4"/>
+<circle class="pc-core" cx="640" cy="640" r="1.3"/>
+<circle cx="520" cy="640" r="3.4"/>
+<circle class="pc-core" cx="520" cy="640" r="1.3"/>
+<circle cx="600" cy="480" r="3.4"/>
+<circle class="pc-core" cx="600" cy="480" r="1.3"/>
+<circle cx="760" cy="560" r="3.4"/>
+<circle class="pc-core" cx="760" cy="560" r="1.3"/>
+<circle cx="840" cy="560" r="3.4"/>
+<circle class="pc-core" cx="840" cy="560" r="1.3"/>
+<circle cx="840" cy="320" r="3.4"/>
+<circle class="pc-core" cx="840" cy="320" r="1.3"/>
+<circle cx="840" cy="200" r="3.4"/>
+<circle class="pc-core" cx="840" cy="200" r="1.3"/>
+<circle cx="640" cy="200" r="3.4"/>
+<circle class="pc-core" cx="640" cy="200" r="1.3"/>
+<circle cx="520" cy="280" r="3.4"/>
+<circle class="pc-core" cx="520" cy="280" r="1.3"/>
+</g>
+</svg>

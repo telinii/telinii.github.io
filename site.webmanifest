@@ -1,0 +1,25 @@
+{
+  "name": "Luca Telini Crozara — Portfólio",
+  "short_name": "Portfólio",
+  "description": "Portfólio de Luca Telini Crozara, desenvolvedor backend com TypeScript e Node.js.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1622",
+  "theme_color": "#0b1622",
+  "icons": [
+    {
+      "src": "assets/img/portrait-quad.jpg",
+      "sizes": "378x378",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

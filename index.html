@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luca Telini Crozara — Desenvolvedor Backend</title>
+<meta name="description" content="Portfólio de Luca Telini Crozara, estudante de Ciência da Computação na UniFACEF e desenvolvedor backend com TypeScript e Node.js. APIs REST, autenticação, bancos de dados e deploy.">
+<meta name="author" content="Luca Telini Crozara">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b1622">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Luca Telini Crozara — Desenvolvedor Backend">
+<meta property="og:description" content="Ciência da Computação · UniFACEF · Desenvolvedor backend com TypeScript e Node.js.">
+<meta property="og:url" content="https://telinii.github.io/">
+<meta property="og:image" content="https://telinii.github.io/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Luca Telini Crozara — desenvolvedor backend">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://telinii.github.io/assets/img/og.jpg">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/portrait-quad.jpg">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+  /* Evita flash de tema incorreto: aplica o tema salvo antes da primeira pintura. */
+  (function () {
+    try {
+      var t = localStorage.getItem('portfolio-theme');
+      if (!t) {
+        t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header" id="topo">
+  <div class="shell header-inner">
+    <a class="wordmark" href="#topo">
+      <span class="wordmark-name">Luca Telini Crozara</span>
+      <span class="wordmark-role">Backend / TypeScript</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-label">Menu</span>
+      <span class="nav-toggle-lines" aria-hidden="true"><i></i><i></i></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#trabalho">Trabalho</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#stack">Stack</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero">
+    <div class="shell">
+      <p class="eyebrow reveal">
+        <span>Ciência da Computação</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>UniFACEF</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Franca, SP</span>
+      </p>
+
+      <div class="hero-top">
+        <h1 class="display reveal">Luca Telini<br>Crozara</h1>
+
+        <figure class="hero-portrait reveal">
+          <img src="assets/img/portrait.jpg" width="378" height="472"
+               alt="Retrato de Luca Telini Crozara, sorrindo, de camisa preta"
+               fetchpriority="high" decoding="async">
+          <figcaption>
+            <span>Luca Telini Crozara</span>
+            <span>Franca, SP — Brasil</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="hero-grid">
+        <p class="lead reveal">
+          Estudante de Ciência da Computação focado em desenvolvimento backend com
+          <em>TypeScript</em>. Construo APIs REST com autenticação, autorização,
+          integração com banco de dados, tratamento seguro de senhas e deploy.
+        </p>
+
+        <div class="hero-meta reveal">
+          <dl>
+            <div>
+              <dt>Foco</dt>
+              <dd>Backend · APIs REST</dd>
+            </div>
+            <div>
+              <dt>Base</dt>
+              <dd>TypeScript · Node.js</dd>
+            </div>
+            <div>
+              <dt>Disponibilidade</dt>
+              <dd>Aberto a estágio</dd>
+            </div>
+          </dl>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contato">Fale comigo</a>
+            <a class="btn" href="assets/cv/luca-telini-crozara-cv.pdf" download>Baixar CV</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-foot reveal">
+        <a href="https://github.com/telinii" target="_blank" rel="noopener noreferrer">github.com/telinii</a>
+        <a href="https://www.linkedin.com/in/luca-telini-crozara-19a609315" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:lucatelinic23@gmail.com">lucatelinic23@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SOBRE ============================ -->
+  <section class="section has-bg" id="sobre" data-bg="assets/bg/bg-sobre.jpg">
+    <div class="section-bg" aria-hidden="true"></div>
+    <div class="circuit" aria-hidden="true"><svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<g class="pc-trace">
+<path d="M 520 520 L 480 600 L 400 600 L 440 600 L 520 600 L 720 640"/>
+<path d="M 360 120 L 320 280 L 240 280 L 160 280 L 80 360 L 80 520 L 160 520 L 280 520 L 240 520 L 160 600 L 160 720 L 200 680"/>
+<path d="M 1280 560 L 1200 520 L 1120 520 L 960 520 L 880 600 L 880 680 L 960 680 L 1080 720"/>
+<path d="M 600 160 L 720 120 L 600 120 L 520 200 L 520 280 L 600 280 L 680 320"/>
+<path d="M 480 280 L 440 400 L 520 400 L 680 400 L 680 480 L 760 480 L 800 480 L 680 480 L 600 560 L 640 760"/>
+<path d="M 440 200 L 240 160 L 320 200"/>
+<path d="M 1320 400 L 1280 280 L 1280 400 L 1280 480 L 1280 640 L 1280 480 L 1280 400 L 1280 320 L 1320 240"/>
+<path d="M 880 440 L 920 400 L 920 280 L 1000 200 L 1080 200 L 1000 200 L 920 200 L 800 200 L 720 280 L 760 480"/>
+</g>
+<g class="pc-glow">
+<path d="M 520 520 L 480 600 L 400 600 L 440 600 L 520 600 L 720 640" style="--pd:0.0s"/>
+<path d="M 360 120 L 320 280 L 240 280 L 160 280 L 80 360 L 80 520 L 160 520 L 280 520 L 240 520 L 160 600 L 160 720 L 200 680" style="--pd:0.9s"/>
+<path d="M 1280 560 L 1200 520 L 1120 520 L 960 520 L 880 600 L 880 680 L 960 680 L 1080 720" style="--pd:1.8s"/>
+<path d="M 600 160 L 720 120 L 600 120 L 520 200 L 520 280 L 600 280 L 680 320" style="--pd:2.7s"/>
+<path d="M 480 280 L 440 400 L 520 400 L 680 400 L 680 480 L 760 480 L 800 480 L 680 480 L 600 560 L 640 760" style="--pd:3.6s"/>
+<path d="M 440 200 L 240 160 L 320 200" style="--pd:4.5s"/>
+<path d="M 1320 400 L 1280 280 L 1280 400 L 1280 480 L 1280 640 L 1280 480 L 1280 400 L 1280 320 L 1320 240" style="--pd:5.4s"/>
+<path d="M 880 440 L 920 400 L 920 280 L 1000 200 L 1080 200 L 1000 200 L 920 200 L 800 200 L 720 280 L 760 480" style="--pd:6.3s"/>
+</g>
+<g class="pc-pulse">
+<path d="M 520 520 L 480 600 L 400 600 L 440 600 L 520 600 L 720 640" style="--pd:0.0s"/>
+<path d="M 360 120 L 320 280 L 240 280 L 160 280 L 80 360 L 80 520 L 160 520 L 280 520 L 240 520 L 160 600 L 160 720 L 200 680" style="--pd:0.9s"/>
+<path d="M 1280 560 L 1200 520 L 1120 520 L 960 520 L 880 600 L 880 680 L 960 680 L 1080 720" style="--pd:1.8s"/>
+<path d="M 600 160 L 720 120 L 600 120 L 520 200 L 520 280 L 600 280 L 680 320" style="--pd:2.7s"/>
+<path d="M 480 280 L 440 400 L 520 400 L 680 400 L 680 480 L 760 480 L 800 480 L 680 480 L 600 560 L 640 760" style="--pd:3.6s"/>
+<path d="M 440 200 L 240 160 L 320 200" style="--pd:4.5s"/>
+<path d="M 1320 400 L 1280 280 L 1280 400 L 1280 480 L 1280 640 L 1280 480 L 1280 400 L 1280 320 L 1320 240" style="--pd:5.4s"/>
+<path d="M 880 440 L 920 400 L 920 280 L 1000 200 L 1080 200 L 1000 200 L 920 200 L 800 200 L 720 280 L 760 480" style="--pd:6.3s"/>
+</g>
+<g class="pc-pad">
+<rect x="512" y="512" width="16" height="16" rx="2"/>
+<rect x="352" y="112" width="16" height="16" rx="2"/>
+<rect x="1272" y="552" width="16" height="16" rx="2"/>
+<rect x="592" y="152" width="16" height="16" rx="2"/>
+<rect x="472" y="272" width="16" height="16" rx="2"/>
+<rect x="432" y="192" width="16" height="16" rx="2"/>
+<rect x="1312" y="392" width="16" height="16" rx="2"/>
+<rect x="872" y="432" width="16" height="16" rx="2"/>
+</g>
+<g class="pc-via">
+<circle cx="480" cy="600" r="3.4"/>
+<circle class="pc-core" cx="480" cy="600" r="1.3"/>
+<circle cx="440" cy="600" r="3.4"/>
+<circle class="pc-core" cx="440" cy="600" r="1.3"/>
+<circle cx="320" cy="280" r="3.4"/>
+<circle class="pc-core" cx="320" cy="280" r="1.3"/>
+<circle cx="160" cy="280" r="3.4"/>
+<circle class="pc-core" cx="160" cy="280" r="1.3"/>
+<circle cx="80" cy="520" r="3.4"/>
+<circle class="pc-core" cx="80" cy="520" r="1.3"/>
+<circle cx="280" cy="520" r="3.4"/>
+<circle class="pc-core" cx="280" cy="520" r="1.3"/>
+<circle cx="160" cy="600" r="3.4"/>
+<circle class="pc-core" cx="160" cy="600" r="1.3"/>
+<circle cx="1200" cy="520" r="3.4"/>
+<circle class="pc-core" cx="1200" cy="520" r="1.3"/>
+<circle cx="960" cy="520" r="3.4"/>
+<circle class="pc-core" cx="960" cy="520" r="1.3"/>
+<circle cx="880" cy="680" r="3.4"/>
+<circle class="pc-core" cx="880" cy="680" r="1.3"/>
+<circle cx="720" cy="120" r="3.4"/>
+<circle class="pc-core" cx="720" cy="120" r="1.3"/>
+<circle cx="520" cy="200" r="3.4"/>
+<circle class="pc-core" cx="520" cy="200" r="1.3"/>
+<circle cx="600" cy="280" r="3.4"/>
+<circle class="pc-core" cx="600" cy="280" r="1.3"/>
+<circle cx="440" cy="400" r="3.4"/>
+<circle class="pc-core" cx="440" cy="400" r="1.3"/>
+<circle cx="680" cy="400" r="3.4"/>
+<circle class="pc-core" cx="680" cy="400" r="1.3"/>
+<circle cx="760" cy="480" r="3.4"/>
+<circle class="pc-core" cx="760" cy="480" r="1.3"/>
+<circle cx="680" cy="480" r="3.4"/>
+<circle class="pc-core" cx="680" cy="480" r="1.3"/>
+<circle cx="240" cy="160" r="3.4"/>
+<circle class="pc-core" cx="240" cy="160" r="1.3"/>
+<circle cx="1280" cy="280" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="280" r="1.3"/>
+<circle cx="1280" cy="480" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="480" r="1.3"/>
+<circle cx="1280" cy="480" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="480" r="1.3"/>
+<circle cx="1280" cy="320" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="320" r="1.3"/>
+<circle cx="920" cy="400" r="3.4"/>
+<circle class="pc-core" cx="920" cy="400" r="1.3"/>
+<circle cx="1000" cy="200" r="3.4"/>
+<circle class="pc-core" cx="1000" cy="200" r="1.3"/>
+<circle cx="1000" cy="200" r="3.4"/>
+<circle class="pc-core" cx="1000" cy="200" r="1.3"/>
+<circle cx="800" cy="200" r="3.4"/>
+<circle class="pc-core" cx="800" cy="200" r="1.3"/>
+</g>
+</svg></div>
+    <div class="shell">
+      <div class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Sobre</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="p-lead">
+            Sou estudante do 4º semestre de Ciência da Computação na UniFACEF e
+            trabalho com desenvolvimento backend. Passo boa parte do tempo em
+            modelagem de dados, autenticação, regras de negócio e deploy.
+          </p>
+          <p>
+            Trabalho principalmente com TypeScript e Node.js. Nos meus projetos,
+            segurança entra junto com a funcionalidade: senhas com hash bcrypt,
+            respostas de login que não revelam se o e-mail existe, validação de
+            entrada e controle de acesso por papel.
+          </p>
+          <p>
+            Uso Supabase e PostgreSQL em projetos que precisam de painel e
+            autenticação prontos, e Prisma com MySQL quando prefiro manter o schema
+            sob controle por meio de migrações versionadas. Já publiquei aplicações
+            na Vercel e no Railway.
+          </p>
+          <p>
+            Sou usuário de Linux — hoje no CachyOS, com uso anterior de Ubuntu e de
+            distros baseadas em Arch. Estou estudando desenvolvimento com IA.
+          </p>
+        </div>
+
+        <aside class="about-aside reveal">
+          <h3 class="minor-title">O que estou estudando</h3>
+          <ol class="about-focus">
+            <li>
+              <h4>Desenvolvimento com IA</h4>
+              <p>Modelos, integração com APIs e RAG.</p>
+            </li>
+            <li>
+              <h4>Backends com TypeScript</h4>
+              <p>Tipagem estrita, validação de entrada, arquitetura em camadas e
+                 contratos de API estáveis.</p>
+            </li>
+            <li>
+              <h4>Deploy em nuvem</h4>
+              <p>Variáveis de ambiente, pipelines de CI e publicação de aplicações.</p>
+            </li>
+          </ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ TRABALHO ============================ -->
+  <section class="section has-bg" id="trabalho" data-bg="assets/bg/bg-trabalho.jpg">
+    <div class="section-bg" aria-hidden="true"></div>
+    <div class="circuit" aria-hidden="true"><svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<g class="pc-trace">
+<path d="M 1240 760 L 1200 560 L 1240 640"/>
+<path d="M 1000 280 L 800 240 L 720 240 L 800 160 L 840 200"/>
+<path d="M 160 520 L 120 560 L 120 640 L 120 680 L 200 680 L 360 720"/>
+<path d="M 320 440 L 240 400 L 160 480 L 160 640 L 240 640 L 320 640 L 440 640 L 520 640 L 720 680"/>
+<path d="M 440 480 L 400 520 L 400 600 L 400 680 L 320 680 L 240 680 L 360 680 L 240 720"/>
+<path d="M 240 360 L 280 320 L 280 200 L 360 120 L 400 120 L 320 120 L 240 200 L 280 240"/>
+<path d="M 1280 360 L 1240 520 L 1120 520 L 1040 600 L 1040 640 L 1120 640 L 1160 680"/>
+</g>
+<g class="pc-glow">
+<path d="M 1240 760 L 1200 560 L 1240 640" style="--pd:0.0s"/>
+<path d="M 1000 280 L 800 240 L 720 240 L 800 160 L 840 200" style="--pd:0.9s"/>
+<path d="M 160 520 L 120 560 L 120 640 L 120 680 L 200 680 L 360 720" style="--pd:1.8s"/>
+<path d="M 320 440 L 240 400 L 160 480 L 160 640 L 240 640 L 320 640 L 440 640 L 520 640 L 720 680" style="--pd:2.7s"/>
+<path d="M 440 480 L 400 520 L 400 600 L 400 680 L 320 680 L 240 680 L 360 680 L 240 720" style="--pd:3.6s"/>
+<path d="M 240 360 L 280 320 L 280 200 L 360 120 L 400 120 L 320 120 L 240 200 L 280 240" style="--pd:4.5s"/>
+<path d="M 1280 360 L 1240 520 L 1120 520 L 1040 600 L 1040 640 L 1120 640 L 1160 680" style="--pd:5.4s"/>
+</g>
+<g class="pc-pulse">
+<path d="M 1240 760 L 1200 560 L 1240 640" style="--pd:0.0s"/>
+<path d="M 1000 280 L 800 240 L 720 240 L 800 160 L 840 200" style="--pd:0.9s"/>
+<path d="M 160 520 L 120 560 L 120 640 L 120 680 L 200 680 L 360 720" style="--pd:1.8s"/>
+<path d="M 320 440 L 240 400 L 160 480 L 160 640 L 240 640 L 320 640 L 440 640 L 520 640 L 720 680" style="--pd:2.7s"/>
+<path d="M 440 480 L 400 520 L 400 600 L 400 680 L 320 680 L 240 680 L 360 680 L 240 720" style="--pd:3.6s"/>
+<path d="M 240 360 L 280 320 L 280 200 L 360 120 L 400 120 L 320 120 L 240 200 L 280 240" style="--pd:4.5s"/>
+<path d="M 1280 360 L 1240 520 L 1120 520 L 1040 600 L 1040 640 L 1120 640 L 1160 680" style="--pd:5.4s"/>
+</g>
+<g class="pc-pad">
+<rect x="1232" y="752" width="16" height="16" rx="2"/>
+<rect x="992" y="272" width="16" height="16" rx="2"/>
+<rect x="152" y="512" width="16" height="16" rx="2"/>
+<rect x="312" y="432" width="16" height="16" rx="2"/>
+<rect x="432" y="472" width="16" height="16" rx="2"/>
+<rect x="232" y="352" width="16" height="16" rx="2"/>
+<rect x="1272" y="352" width="16" height="16" rx="2"/>
+</g>
+<g class="pc-via">
+<circle cx="1200" cy="560" r="3.4"/>
+<circle class="pc-core" cx="1200" cy="560" r="1.3"/>
+<circle cx="800" cy="240" r="3.4"/>
+<circle class="pc-core" cx="800" cy="240" r="1.3"/>
+<circle cx="720" cy="240" r="3.4"/>
+<circle class="pc-core" cx="720" cy="240" r="1.3"/>
+<circle cx="800" cy="160" r="3.4"/>
+<circle class="pc-core" cx="800" cy="160" r="1.3"/>
+<circle cx="120" cy="560" r="3.4"/>
+<circle class="pc-core" cx="120" cy="560" r="1.3"/>
+<circle cx="120" cy="640" r="3.4"/>
+<circle class="pc-core" cx="120" cy="640" r="1.3"/>
+<circle cx="120" cy="680" r="3.4"/>
+<circle class="pc-core" cx="120" cy="680" r="1.3"/>
+<circle cx="200" cy="680" r="3.4"/>
+<circle class="pc-core" cx="200" cy="680" r="1.3"/>
+<circle cx="240" cy="400" r="3.4"/>
+<circle class="pc-core" cx="240" cy="400" r="1.3"/>
+<circle cx="160" cy="480" r="3.4"/>
+<circle class="pc-core" cx="160" cy="480" r="1.3"/>
+<circle cx="160" cy="640" r="3.4"/>
+<circle class="pc-core" cx="160" cy="640" r="1.3"/>
+<circle cx="240" cy="640" r="3.4"/>
+<circle class="pc-core" cx="240" cy="640" r="1.3"/>
+<circle cx="320" cy="640" r="3.4"/>
+<circle class="pc-core" cx="320" cy="640" r="1.3"/>
+<circle cx="440" cy="640" r="3.4"/>
+<circle class="pc-core" cx="440" cy="640" r="1.3"/>
+<circle cx="520" cy="640" r="3.4"/>
+<circle class="pc-core" cx="520" cy="640" r="1.3"/>
+<circle cx="400" cy="520" r="3.4"/>
+<circle class="pc-core" cx="400" cy="520" r="1.3"/>
+<circle cx="400" cy="600" r="3.4"/>
+<circle class="pc-core" cx="400" cy="600" r="1.3"/>
+<circle cx="400" cy="680" r="3.4"/>
+<circle class="pc-core" cx="400" cy="680" r="1.3"/>
+<circle cx="320" cy="680" r="3.4"/>
+<circle class="pc-core" cx="320" cy="680" r="1.3"/>
+<circle cx="240" cy="680" r="3.4"/>
+<circle class="pc-core" cx="240" cy="680" r="1.3"/>
+<circle cx="360" cy="680" r="3.4"/>
+<circle class="pc-core" cx="360" cy="680" r="1.3"/>
+<circle cx="280" cy="320" r="3.4"/>
+<circle class="pc-core" cx="280" cy="320" r="1.3"/>
+<circle cx="280" cy="200" r="3.4"/>
+<circle class="pc-core" cx="280" cy="200" r="1.3"/>
+<circle cx="360" cy="120" r="3.4"/>
+<circle class="pc-core" cx="360" cy="120" r="1.3"/>
+<circle cx="400" cy="120" r="3.4"/>
+<circle class="pc-core" cx="400" cy="120" r="1.3"/>
+<circle cx="320" cy="120" r="3.4"/>
+<circle class="pc-core" cx="320" cy="120" r="1.3"/>
+<circle cx="240" cy="200" r="3.4"/>
+<circle class="pc-core" cx="240" cy="200" r="1.3"/>
+<circle cx="1240" cy="520" r="3.4"/>
+<circle class="pc-core" cx="1240" cy="520" r="1.3"/>
+<circle cx="1120" cy="520" r="3.4"/>
+<circle class="pc-core" cx="1120" cy="520" r="1.3"/>
+<circle cx="1040" cy="600" r="3.4"/>
+<circle class="pc-core" cx="1040" cy="600" r="1.3"/>
+<circle cx="1040" cy="640" r="3.4"/>
+<circle class="pc-core" cx="1040" cy="640" r="1.3"/>
+<circle cx="1120" cy="640" r="3.4"/>
+<circle class="pc-core" cx="1120" cy="640" r="1.3"/>
+</g>
+</svg></div>
+    <div class="shell">
+      <div class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Trabalho</h2>
+        <p class="section-note">Projetos que me foram contratados e pagos para fazer.</p>
+      </div>
+
+      <article class="role reveal">
+        <div class="role-head">
+          <div>
+            <p class="role-org">Teckiwi</p>
+            <h3 class="role-title">API de blog</h3>
+          </div>
+          <p class="role-meta">
+            <span>Setembro de 2026</span>
+            <span>Freelance</span>
+          </p>
+        </div>
+
+        <div class="role-body">
+          <div class="role-summary">
+            <p>
+              API REST para um sistema de blog, encomendada pela Teckiwi. CRUD
+              completo de usuários, hash de senha e autenticação JWT, com as regras
+              de negócio já definidas pelo contratante.
+            </p>
+            <ul class="tags" aria-label="Tecnologias">
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Prisma</li>
+              <li>MySQL</li>
+              <li>Joi</li>
+              <li>JWT</li>
+              <li>bcrypt</li>
+            </ul>
+          </div>
+
+          <ul class="role-points">
+            <li>
+              <h4>Autorização por recurso</h4>
+              <p>Cada usuário edita e apaga apenas os próprios posts. A verificação
+                 acontece no servidor, e não apenas na interface.</p>
+            </li>
+            <li>
+              <h4>Senhas nunca expostas</h4>
+              <p>Hash com bcrypt na gravação e ausência de credenciais em qualquer
+                 resposta da API, inclusive nas listagens.</p>
+            </li>
+            <li>
+              <h4>Sessão com expiração</h4>
+              <p>Token JWT nas rotas protegidas, com validade definida para forçar
+                 reautenticação.</p>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================ PROJETOS ============================ -->
+  <section class="section has-bg" id="projetos" data-bg="assets/bg/bg-projetos.jpg">
+    <div class="section-bg" aria-hidden="true"></div>
+    <div class="circuit" aria-hidden="true"><svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<g class="pc-trace">
+<path d="M 920 200 L 1040 160 L 1120 160 L 1240 160 L 1240 240 L 1240 360 L 1240 240 L 1240 160 L 1200 200"/>
+<path d="M 480 360 L 440 560 L 520 560 L 680 560 L 520 560 L 440 560 L 520 480 L 520 560 L 480 600"/>
+<path d="M 520 480 L 600 440 L 600 520 L 600 560 L 680 560 L 800 600"/>
+<path d="M 440 240 L 320 200 L 440 200 L 520 120 L 600 120 L 560 160"/>
+<path d="M 640 200 L 680 160 L 600 160 L 440 160 L 360 160 L 200 160 L 120 240 L 120 360 L 200 360 L 400 400"/>
+<path d="M 320 680 L 280 640 L 360 640 L 360 720 L 440 720 L 520 760"/>
+<path d="M 1040 400 L 1120 360 L 1200 360 L 1280 360 L 1160 360 L 1080 360 L 1080 280 L 1120 480"/>
+<path d="M 160 680 L 120 720 L 200 720 L 280 720 L 320 640"/>
+<path d="M 560 240 L 680 200 L 680 120 L 520 120 L 600 120 L 600 200 L 640 240"/>
+</g>
+<g class="pc-glow">
+<path d="M 920 200 L 1040 160 L 1120 160 L 1240 160 L 1240 240 L 1240 360 L 1240 240 L 1240 160 L 1200 200" style="--pd:0.0s"/>
+<path d="M 480 360 L 440 560 L 520 560 L 680 560 L 520 560 L 440 560 L 520 480 L 520 560 L 480 600" style="--pd:0.9s"/>
+<path d="M 520 480 L 600 440 L 600 520 L 600 560 L 680 560 L 800 600" style="--pd:1.8s"/>
+<path d="M 440 240 L 320 200 L 440 200 L 520 120 L 600 120 L 560 160" style="--pd:2.7s"/>
+<path d="M 640 200 L 680 160 L 600 160 L 440 160 L 360 160 L 200 160 L 120 240 L 120 360 L 200 360 L 400 400" style="--pd:3.6s"/>
+<path d="M 320 680 L 280 640 L 360 640 L 360 720 L 440 720 L 520 760" style="--pd:4.5s"/>
+<path d="M 1040 400 L 1120 360 L 1200 360 L 1280 360 L 1160 360 L 1080 360 L 1080 280 L 1120 480" style="--pd:5.4s"/>
+<path d="M 160 680 L 120 720 L 200 720 L 280 720 L 320 640" style="--pd:6.3s"/>
+<path d="M 560 240 L 680 200 L 680 120 L 520 120 L 600 120 L 600 200 L 640 240" style="--pd:7.2s"/>
+</g>
+<g class="pc-pulse">
+<path d="M 920 200 L 1040 160 L 1120 160 L 1240 160 L 1240 240 L 1240 360 L 1240 240 L 1240 160 L 1200 200" style="--pd:0.0s"/>
+<path d="M 480 360 L 440 560 L 520 560 L 680 560 L 520 560 L 440 560 L 520 480 L 520 560 L 480 600" style="--pd:0.9s"/>
+<path d="M 520 480 L 600 440 L 600 520 L 600 560 L 680 560 L 800 600" style="--pd:1.8s"/>
+<path d="M 440 240 L 320 200 L 440 200 L 520 120 L 600 120 L 560 160" style="--pd:2.7s"/>
+<path d="M 640 200 L 680 160 L 600 160 L 440 160 L 360 160 L 200 160 L 120 240 L 120 360 L 200 360 L 400 400" style="--pd:3.6s"/>
+<path d="M 320 680 L 280 640 L 360 640 L 360 720 L 440 720 L 520 760" style="--pd:4.5s"/>
+<path d="M 1040 400 L 1120 360 L 1200 360 L 1280 360 L 1160 360 L 1080 360 L 1080 280 L 1120 480" style="--pd:5.4s"/>
+<path d="M 160 680 L 120 720 L 200 720 L 280 720 L 320 640" style="--pd:6.3s"/>
+<path d="M 560 240 L 680 200 L 680 120 L 520 120 L 600 120 L 600 200 L 640 240" style="--pd:7.2s"/>
+</g>
+<g class="pc-pad">
+<rect x="912" y="192" width="16" height="16" rx="2"/>
+<rect x="472" y="352" width="16" height="16" rx="2"/>
+<rect x="512" y="472" width="16" height="16" rx="2"/>
+<rect x="432" y="232" width="16" height="16" rx="2"/>
+<rect x="632" y="192" width="16" height="16" rx="2"/>
+<rect x="312" y="672" width="16" height="16" rx="2"/>
+<rect x="1032" y="392" width="16" height="16" rx="2"/>
+<rect x="152" y="672" width="16" height="16" rx="2"/>
+<rect x="552" y="232" width="16" height="16" rx="2"/>
+</g>
+<g class="pc-via">
+<circle cx="1040" cy="160" r="3.4"/>
+<circle class="pc-core" cx="1040" cy="160" r="1.3"/>
+<circle cx="1120" cy="160" r="3.4"/>
+<circle class="pc-core" cx="1120" cy="160" r="1.3"/>
+<circle cx="1240" cy="160" r="3.4"/>
+<circle class="pc-core" cx="1240" cy="160" r="1.3"/>
+<circle cx="1240" cy="240" r="3.4"/>
+<circle class="pc-core" cx="1240" cy="240" r="1.3"/>
+<circle cx="1240" cy="360" r="3.4"/>
+<circle class="pc-core" cx="1240" cy="360" r="1.3"/>
+<circle cx="1240" cy="240" r="3.4"/>
+<circle class="pc-core" cx="1240" cy="240" r="1.3"/>
+<circle cx="1240" cy="160" r="3.4"/>
+<circle class="pc-core" cx="1240" cy="160" r="1.3"/>
+<circle cx="440" cy="560" r="3.4"/>
+<circle class="pc-core" cx="440" cy="560" r="1.3"/>
+<circle cx="520" cy="560" r="3.4"/>
+<circle class="pc-core" cx="520" cy="560" r="1.3"/>
+<circle cx="680" cy="560" r="3.4"/>
+<circle class="pc-core" cx="680" cy="560" r="1.3"/>
+<circle cx="520" cy="560" r="3.4"/>
+<circle class="pc-core" cx="520" cy="560" r="1.3"/>
+<circle cx="440" cy="560" r="3.4"/>
+<circle class="pc-core" cx="440" cy="560" r="1.3"/>
+<circle cx="520" cy="480" r="3.4"/>
+<circle class="pc-core" cx="520" cy="480" r="1.3"/>
+<circle cx="520" cy="560" r="3.4"/>
+<circle class="pc-core" cx="520" cy="560" r="1.3"/>
+<circle cx="600" cy="440" r="3.4"/>
+<circle class="pc-core" cx="600" cy="440" r="1.3"/>
+<circle cx="600" cy="520" r="3.4"/>
+<circle class="pc-core" cx="600" cy="520" r="1.3"/>
+<circle cx="600" cy="560" r="3.4"/>
+<circle class="pc-core" cx="600" cy="560" r="1.3"/>
+<circle cx="680" cy="560" r="3.4"/>
+<circle class="pc-core" cx="680" cy="560" r="1.3"/>
+<circle cx="320" cy="200" r="3.4"/>
+<circle class="pc-core" cx="320" cy="200" r="1.3"/>
+<circle cx="440" cy="200" r="3.4"/>
+<circle class="pc-core" cx="440" cy="200" r="1.3"/>
+<circle cx="520" cy="120" r="3.4"/>
+<circle class="pc-core" cx="520" cy="120" r="1.3"/>
+<circle cx="600" cy="120" r="3.4"/>
+<circle class="pc-core" cx="600" cy="120" r="1.3"/>
+<circle cx="680" cy="160" r="3.4"/>
+<circle class="pc-core" cx="680" cy="160" r="1.3"/>
+<circle cx="600" cy="160" r="3.4"/>
+<circle class="pc-core" cx="600" cy="160" r="1.3"/>
+<circle cx="440" cy="160" r="3.4"/>
+<circle class="pc-core" cx="440" cy="160" r="1.3"/>
+<circle cx="360" cy="160" r="3.4"/>
+<circle class="pc-core" cx="360" cy="160" r="1.3"/>
+<circle cx="200" cy="160" r="3.4"/>
+<circle class="pc-core" cx="200" cy="160" r="1.3"/>
+<circle cx="120" cy="240" r="3.4"/>
+<circle class="pc-core" cx="120" cy="240" r="1.3"/>
+<circle cx="120" cy="360" r="3.4"/>
+<circle class="pc-core" cx="120" cy="360" r="1.3"/>
+<circle cx="200" cy="360" r="3.4"/>
+<circle class="pc-core" cx="200" cy="360" r="1.3"/>
+<circle cx="280" cy="640" r="3.4"/>
+<circle class="pc-core" cx="280" cy="640" r="1.3"/>
+<circle cx="360" cy="640" r="3.4"/>
+<circle class="pc-core" cx="360" cy="640" r="1.3"/>
+<circle cx="360" cy="720" r="3.4"/>
+<circle class="pc-core" cx="360" cy="720" r="1.3"/>
+<circle cx="440" cy="720" r="3.4"/>
+<circle class="pc-core" cx="440" cy="720" r="1.3"/>
+<circle cx="1120" cy="360" r="3.4"/>
+<circle class="pc-core" cx="1120" cy="360" r="1.3"/>
+<circle cx="1200" cy="360" r="3.4"/>
+<circle class="pc-core" cx="1200" cy="360" r="1.3"/>
+<circle cx="1280" cy="360" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="360" r="1.3"/>
+<circle cx="1160" cy="360" r="3.4"/>
+<circle class="pc-core" cx="1160" cy="360" r="1.3"/>
+<circle cx="1080" cy="360" r="3.4"/>
+<circle class="pc-core" cx="1080" cy="360" r="1.3"/>
+<circle cx="1080" cy="280" r="3.4"/>
+<circle class="pc-core" cx="1080" cy="280" r="1.3"/>
+<circle cx="120" cy="720" r="3.4"/>
+<circle class="pc-core" cx="120" cy="720" r="1.3"/>
+<circle cx="200" cy="720" r="3.4"/>
+<circle class="pc-core" cx="200" cy="720" r="1.3"/>
+<circle cx="280" cy="720" r="3.4"/>
+<circle class="pc-core" cx="280" cy="720" r="1.3"/>
+<circle cx="680" cy="200" r="3.4"/>
+<circle class="pc-core" cx="680" cy="200" r="1.3"/>
+<circle cx="680" cy="120" r="3.4"/>
+<circle class="pc-core" cx="680" cy="120" r="1.3"/>
+<circle cx="520" cy="120" r="3.4"/>
+<circle class="pc-core" cx="520" cy="120" r="1.3"/>
+<circle cx="600" cy="120" r="3.4"/>
+<circle class="pc-core" cx="600" cy="120" r="1.3"/>
+<circle cx="600" cy="200" r="3.4"/>
+<circle class="pc-core" cx="600" cy="200" r="1.3"/>
+</g>
+</svg></div>
+    <div class="shell">
+      <div class="section-head reveal">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Projetos</h2>
+        <p class="section-note">Três trabalhos que resumem o que sei fazer até agora.</p>
+      </div>
+
+      <div class="projects">
+
+        <article class="project reveal">
+          <span class="project-year">2026</span>
+          <h3 class="project-title">
+            <a href="https://github.com/telinii/hub-epi" target="_blank" rel="noopener noreferrer">hub-epi</a>
+          </h3>
+          <p class="project-desc">
+            Sistema de controle de estoque de EPIs. Cadastro de colaboradores e
+            equipamentos, controle de entregas, faturas, relatórios e exportação em PDF.
+            Controle de acesso por papel — administrador versus usuário comum.
+          </p>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>React</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li>
+            <li>Zod</li><li>Vitest</li><li>PWA</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/telinii/hub-epi" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <span class="project-year">2026</span>
+          <h3 class="project-title">
+            <a href="https://github.com/telinii/blog" target="_blank" rel="noopener noreferrer">blog</a>
+          </h3>
+          <p class="project-desc">
+            API RESTful de blog com autenticação JWT. Senhas com hash via bcrypt
+            (<code>10</code> rounds), resposta de login idêntica para e-mail inexistente e
+            senha errada, token com expiração de 1h e middleware de proteção de rotas.
+            Primeiro projeto de API que construí. Deploy feito no Railway.
+          </p>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>TypeScript</li><li>Express</li><li>Prisma</li><li>MySQL</li>
+            <li>Joi</li><li>JWT</li><li>bcrypt</li><li>Railway</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/telinii/blog" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <span class="project-year">2026</span>
+          <h3 class="project-title">
+            <a href="https://github.com/telinii/maintenance-system" target="_blank" rel="noopener noreferrer">maintenance-system</a>
+          </h3>
+          <p class="project-desc">
+            Sistema de manutenção de máquinas agrícolas. Registro de máquinas, agendamento
+            e histórico de manutenções, análise de custos com gráficos e cotação de cana.
+            Tema claro/escuro e suporte a PWA. Deploy feito na Vercel, embora a aplicação
+            não esteja no ar no momento.
+          </p>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>React</li><li>TypeScript</li><li>Tailwind</li><li>Supabase</li>
+            <li>Recharts</li><li>Vite</li><li>Vercel</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/telinii/maintenance-system" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="other-work reveal">
+        <h3 class="minor-title">Outros repositórios</h3>
+        <ul class="repo-list">
+          <li>
+            <a href="https://github.com/telinii/GerenciamentoEstoque-Antigravity" target="_blank" rel="noopener noreferrer">GerenciamentoEstoque-Antigravity</a>
+            <span class="repo-lang" data-lang="Python">Python</span>
+            <span class="repo-desc">Sistema de gerenciamento de estoque.</span>
+          </li>
+          <li>
+            <a href="https://github.com/telinii/ToDoList" target="_blank" rel="noopener noreferrer">ToDoList</a>
+            <span class="repo-lang" data-lang="JavaScript">JavaScript</span>
+            <span class="repo-desc">Primeiro projeto de estudo.</span>
+          </li>
+          <li>
+            <a href="https://github.com/telinii/Java-Calculator" target="_blank" rel="noopener noreferrer">Java-Calculator</a>
+            <span class="repo-lang" data-lang="Java">Java</span>
+            <span class="repo-desc">Calculadora com as quatro operações básicas.</span>
+          </li>
+          <li>
+            <a href="https://github.com/telinii/telinii" target="_blank" rel="noopener noreferrer">telinii</a>
+            <span class="repo-desc">Perfil de desenvolvedor no GitHub.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ STACK ============================ -->
+  <section class="section has-bg" id="stack" data-bg="assets/bg/bg-stack.jpg">
+    <div class="section-bg" aria-hidden="true"></div>
+    <div class="circuit" aria-hidden="true"><svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<g class="pc-trace">
+<path d="M 880 720 L 840 520 L 840 640 L 920 640 L 840 640 L 760 640 L 680 640 L 720 640 L 800 640 L 920 680"/>
+<path d="M 400 240 L 280 200 L 200 280 L 200 440 L 200 520 L 160 560"/>
+<path d="M 1080 480 L 1040 400 L 1040 320 L 960 320 L 960 200 L 960 120 L 880 120 L 800 120 L 760 120 L 840 120 L 880 160"/>
+<path d="M 1040 720 L 1000 680 L 920 680 L 920 560 L 920 480 L 880 480 L 800 480 L 640 480 L 560 560 L 560 640 L 440 640 L 360 640 L 160 680"/>
+<path d="M 680 360 L 480 320 L 400 400 L 400 320 L 400 200 L 480 120 L 560 120 L 440 120 L 360 120 L 200 160"/>
+<path d="M 840 720 L 640 680 L 560 680 L 560 560 L 560 480 L 560 440 L 560 360 L 520 360 L 440 440 L 480 520"/>
+</g>
+<g class="pc-glow">
+<path d="M 880 720 L 840 520 L 840 640 L 920 640 L 840 640 L 760 640 L 680 640 L 720 640 L 800 640 L 920 680" style="--pd:0.0s"/>
+<path d="M 400 240 L 280 200 L 200 280 L 200 440 L 200 520 L 160 560" style="--pd:0.9s"/>
+<path d="M 1080 480 L 1040 400 L 1040 320 L 960 320 L 960 200 L 960 120 L 880 120 L 800 120 L 760 120 L 840 120 L 880 160" style="--pd:1.8s"/>
+<path d="M 1040 720 L 1000 680 L 920 680 L 920 560 L 920 480 L 880 480 L 800 480 L 640 480 L 560 560 L 560 640 L 440 640 L 360 640 L 160 680" style="--pd:2.7s"/>
+<path d="M 680 360 L 480 320 L 400 400 L 400 320 L 400 200 L 480 120 L 560 120 L 440 120 L 360 120 L 200 160" style="--pd:3.6s"/>
+<path d="M 840 720 L 640 680 L 560 680 L 560 560 L 560 480 L 560 440 L 560 360 L 520 360 L 440 440 L 480 520" style="--pd:4.5s"/>
+</g>
+<g class="pc-pulse">
+<path d="M 880 720 L 840 520 L 840 640 L 920 640 L 840 640 L 760 640 L 680 640 L 720 640 L 800 640 L 920 680" style="--pd:0.0s"/>
+<path d="M 400 240 L 280 200 L 200 280 L 200 440 L 200 520 L 160 560" style="--pd:0.9s"/>
+<path d="M 1080 480 L 1040 400 L 1040 320 L 960 320 L 960 200 L 960 120 L 880 120 L 800 120 L 760 120 L 840 120 L 880 160" style="--pd:1.8s"/>
+<path d="M 1040 720 L 1000 680 L 920 680 L 920 560 L 920 480 L 880 480 L 800 480 L 640 480 L 560 560 L 560 640 L 440 640 L 360 640 L 160 680" style="--pd:2.7s"/>
+<path d="M 680 360 L 480 320 L 400 400 L 400 320 L 400 200 L 480 120 L 560 120 L 440 120 L 360 120 L 200 160" style="--pd:3.6s"/>
+<path d="M 840 720 L 640 680 L 560 680 L 560 560 L 560 480 L 560 440 L 560 360 L 520 360 L 440 440 L 480 520" style="--pd:4.5s"/>
+</g>
+<g class="pc-pad">
+<rect x="872" y="712" width="16" height="16" rx="2"/>
+<rect x="392" y="232" width="16" height="16" rx="2"/>
+<rect x="1072" y="472" width="16" height="16" rx="2"/>
+<rect x="1032" y="712" width="16" height="16" rx="2"/>
+<rect x="672" y="352" width="16" height="16" rx="2"/>
+<rect x="832" y="712" width="16" height="16" rx="2"/>
+</g>
+<g class="pc-via">
+<circle cx="840" cy="520" r="3.4"/>
+<circle class="pc-core" cx="840" cy="520" r="1.3"/>
+<circle cx="840" cy="640" r="3.4"/>
+<circle class="pc-core" cx="840" cy="640" r="1.3"/>
+<circle cx="920" cy="640" r="3.4"/>
+<circle class="pc-core" cx="920" cy="640" r="1.3"/>
+<circle cx="840" cy="640" r="3.4"/>
+<circle class="pc-core" cx="840" cy="640" r="1.3"/>
+<circle cx="760" cy="640" r="3.4"/>
+<circle class="pc-core" cx="760" cy="640" r="1.3"/>
+<circle cx="680" cy="640" r="3.4"/>
+<circle class="pc-core" cx="680" cy="640" r="1.3"/>
+<circle cx="720" cy="640" r="3.4"/>
+<circle class="pc-core" cx="720" cy="640" r="1.3"/>
+<circle cx="800" cy="640" r="3.4"/>
+<circle class="pc-core" cx="800" cy="640" r="1.3"/>
+<circle cx="280" cy="200" r="3.4"/>
+<circle class="pc-core" cx="280" cy="200" r="1.3"/>
+<circle cx="200" cy="280" r="3.4"/>
+<circle class="pc-core" cx="200" cy="280" r="1.3"/>
+<circle cx="200" cy="440" r="3.4"/>
+<circle class="pc-core" cx="200" cy="440" r="1.3"/>
+<circle cx="200" cy="520" r="3.4"/>
+<circle class="pc-core" cx="200" cy="520" r="1.3"/>
+<circle cx="1040" cy="400" r="3.4"/>
+<circle class="pc-core" cx="1040" cy="400" r="1.3"/>
+<circle cx="1040" cy="320" r="3.4"/>
+<circle class="pc-core" cx="1040" cy="320" r="1.3"/>
+<circle cx="960" cy="320" r="3.4"/>
+<circle class="pc-core" cx="960" cy="320" r="1.3"/>
+<circle cx="960" cy="200" r="3.4"/>
+<circle class="pc-core" cx="960" cy="200" r="1.3"/>
+<circle cx="960" cy="120" r="3.4"/>
+<circle class="pc-core" cx="960" cy="120" r="1.3"/>
+<circle cx="880" cy="120" r="3.4"/>
+<circle class="pc-core" cx="880" cy="120" r="1.3"/>
+<circle cx="800" cy="120" r="3.4"/>
+<circle class="pc-core" cx="800" cy="120" r="1.3"/>
+<circle cx="760" cy="120" r="3.4"/>
+<circle class="pc-core" cx="760" cy="120" r="1.3"/>
+<circle cx="840" cy="120" r="3.4"/>
+<circle class="pc-core" cx="840" cy="120" r="1.3"/>
+<circle cx="1000" cy="680" r="3.4"/>
+<circle class="pc-core" cx="1000" cy="680" r="1.3"/>
+<circle cx="920" cy="680" r="3.4"/>
+<circle class="pc-core" cx="920" cy="680" r="1.3"/>
+<circle cx="920" cy="560" r="3.4"/>
+<circle class="pc-core" cx="920" cy="560" r="1.3"/>
+<circle cx="920" cy="480" r="3.4"/>
+<circle class="pc-core" cx="920" cy="480" r="1.3"/>
+<circle cx="880" cy="480" r="3.4"/>
+<circle class="pc-core" cx="880" cy="480" r="1.3"/>
+<circle cx="800" cy="480" r="3.4"/>
+<circle class="pc-core" cx="800" cy="480" r="1.3"/>
+<circle cx="640" cy="480" r="3.4"/>
+<circle class="pc-core" cx="640" cy="480" r="1.3"/>
+<circle cx="560" cy="560" r="3.4"/>
+<circle class="pc-core" cx="560" cy="560" r="1.3"/>
+<circle cx="560" cy="640" r="3.4"/>
+<circle class="pc-core" cx="560" cy="640" r="1.3"/>
+<circle cx="440" cy="640" r="3.4"/>
+<circle class="pc-core" cx="440" cy="640" r="1.3"/>
+<circle cx="360" cy="640" r="3.4"/>
+<circle class="pc-core" cx="360" cy="640" r="1.3"/>
+<circle cx="480" cy="320" r="3.4"/>
+<circle class="pc-core" cx="480" cy="320" r="1.3"/>
+<circle cx="400" cy="400" r="3.4"/>
+<circle class="pc-core" cx="400" cy="400" r="1.3"/>
+<circle cx="400" cy="320" r="3.4"/>
+<circle class="pc-core" cx="400" cy="320" r="1.3"/>
+<circle cx="400" cy="200" r="3.4"/>
+<circle class="pc-core" cx="400" cy="200" r="1.3"/>
+<circle cx="480" cy="120" r="3.4"/>
+<circle class="pc-core" cx="480" cy="120" r="1.3"/>
+<circle cx="560" cy="120" r="3.4"/>
+<circle class="pc-core" cx="560" cy="120" r="1.3"/>
+<circle cx="440" cy="120" r="3.4"/>
+<circle class="pc-core" cx="440" cy="120" r="1.3"/>
+<circle cx="360" cy="120" r="3.4"/>
+<circle class="pc-core" cx="360" cy="120" r="1.3"/>
+<circle cx="640" cy="680" r="3.4"/>
+<circle class="pc-core" cx="640" cy="680" r="1.3"/>
+<circle cx="560" cy="680" r="3.4"/>
+<circle class="pc-core" cx="560" cy="680" r="1.3"/>
+<circle cx="560" cy="560" r="3.4"/>
+<circle class="pc-core" cx="560" cy="560" r="1.3"/>
+<circle cx="560" cy="480" r="3.4"/>
+<circle class="pc-core" cx="560" cy="480" r="1.3"/>
+<circle cx="560" cy="440" r="3.4"/>
+<circle class="pc-core" cx="560" cy="440" r="1.3"/>
+<circle cx="560" cy="360" r="3.4"/>
+<circle class="pc-core" cx="560" cy="360" r="1.3"/>
+<circle cx="520" cy="360" r="3.4"/>
+<circle class="pc-core" cx="520" cy="360" r="1.3"/>
+<circle cx="440" cy="440" r="3.4"/>
+<circle class="pc-core" cx="440" cy="440" r="1.3"/>
+</g>
+</svg></div>
+    <div class="shell">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Stack</h2>
+        <p class="section-note">
+          O que eu uso no dia a dia, o que já levei para produção e o que ainda estou
+          consolidando.
+        </p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-group reveal">
+          <h3 class="minor-title">Uso no dia a dia</h3>
+          <ul class="plain-list">
+            <li><span class="ti ti--ts" aria-hidden="true"></span>TypeScript</li>
+            <li><span class="ti ti--node" aria-hidden="true"></span>Node.js</li>
+            <li><span class="ti ti--express" aria-hidden="true"></span>Express</li>
+            <li><span class="ti ti--git" aria-hidden="true"></span>Git</li>
+            <li><span class="ti ti--postgres" aria-hidden="true"></span>PostgreSQL</li>
+            <li><span class="ti ti--padrao" aria-hidden="true"></span>SQL</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="minor-title">Já usei em produção</h3>
+          <ul class="plain-list">
+            <li><span class="ti ti--prisma" aria-hidden="true"></span>Prisma</li>
+            <li><span class="ti ti--mysql" aria-hidden="true"></span>MySQL</li>
+            <li><span class="ti ti--supabase" aria-hidden="true"></span>Supabase</li>
+            <li><span class="ti ti--padrao" aria-hidden="true"></span>JWT</li>
+            <li><span class="ti ti--padrao" aria-hidden="true"></span>bcrypt</li>
+            <li><span class="ti ti--zod" aria-hidden="true"></span>Zod</li>
+            <li><span class="ti ti--vercel" aria-hidden="true"></span>Vercel</li>
+          </ul>
+        </div>
+
+        <div class="stack-group reveal">
+          <h3 class="minor-title">Consolidando</h3>
+          <ul class="plain-list">
+            <li><span class="ti ti--react" aria-hidden="true"></span>React</li>
+            <li><span class="ti ti--docker" aria-hidden="true"></span>Docker</li>
+            <li><span class="ti ti--vitest" aria-hidden="true"></span>Vitest</li>
+            <li><span class="ti ti--padrao" aria-hidden="true"></span>Joi</li>
+            <li><span class="ti ti--js" aria-hidden="true"></span>JavaScript</li>
+            <li><span class="ti ti--linux" aria-hidden="true"></span>Linux</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================== CONTATO =========================== -->
+  <section class="section section-contact has-bg" id="contato" data-bg="assets/bg/bg-contato.jpg">
+    <div class="section-bg" aria-hidden="true"></div>
+    <div class="circuit" aria-hidden="true"><svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<g class="pc-trace">
+<path d="M 520 520 L 480 600 L 400 600 L 440 600 L 520 600 L 720 640"/>
+<path d="M 360 120 L 320 280 L 240 280 L 160 280 L 80 360 L 80 520 L 160 520 L 280 520 L 240 520 L 160 600 L 160 720 L 200 680"/>
+<path d="M 1280 560 L 1200 520 L 1120 520 L 960 520 L 880 600 L 880 680 L 960 680 L 1080 720"/>
+<path d="M 600 160 L 720 120 L 600 120 L 520 200 L 520 280 L 600 280 L 680 320"/>
+<path d="M 480 280 L 440 400 L 520 400 L 680 400 L 680 480 L 760 480 L 800 480 L 680 480 L 600 560 L 640 760"/>
+<path d="M 440 200 L 240 160 L 320 200"/>
+<path d="M 1320 400 L 1280 280 L 1280 400 L 1280 480 L 1280 640 L 1280 480 L 1280 400 L 1280 320 L 1320 240"/>
+<path d="M 880 440 L 920 400 L 920 280 L 1000 200 L 1080 200 L 1000 200 L 920 200 L 800 200 L 720 280 L 760 480"/>
+</g>
+<g class="pc-glow">
+<path d="M 520 520 L 480 600 L 400 600 L 440 600 L 520 600 L 720 640" style="--pd:0.0s"/>
+<path d="M 360 120 L 320 280 L 240 280 L 160 280 L 80 360 L 80 520 L 160 520 L 280 520 L 240 520 L 160 600 L 160 720 L 200 680" style="--pd:0.9s"/>
+<path d="M 1280 560 L 1200 520 L 1120 520 L 960 520 L 880 600 L 880 680 L 960 680 L 1080 720" style="--pd:1.8s"/>
+<path d="M 600 160 L 720 120 L 600 120 L 520 200 L 520 280 L 600 280 L 680 320" style="--pd:2.7s"/>
+<path d="M 480 280 L 440 400 L 520 400 L 680 400 L 680 480 L 760 480 L 800 480 L 680 480 L 600 560 L 640 760" style="--pd:3.6s"/>
+<path d="M 440 200 L 240 160 L 320 200" style="--pd:4.5s"/>
+<path d="M 1320 400 L 1280 280 L 1280 400 L 1280 480 L 1280 640 L 1280 480 L 1280 400 L 1280 320 L 1320 240" style="--pd:5.4s"/>
+<path d="M 880 440 L 920 400 L 920 280 L 1000 200 L 1080 200 L 1000 200 L 920 200 L 800 200 L 720 280 L 760 480" style="--pd:6.3s"/>
+</g>
+<g class="pc-pulse">
+<path d="M 520 520 L 480 600 L 400 600 L 440 600 L 520 600 L 720 640" style="--pd:0.0s"/>
+<path d="M 360 120 L 320 280 L 240 280 L 160 280 L 80 360 L 80 520 L 160 520 L 280 520 L 240 520 L 160 600 L 160 720 L 200 680" style="--pd:0.9s"/>
+<path d="M 1280 560 L 1200 520 L 1120 520 L 960 520 L 880 600 L 880 680 L 960 680 L 1080 720" style="--pd:1.8s"/>
+<path d="M 600 160 L 720 120 L 600 120 L 520 200 L 520 280 L 600 280 L 680 320" style="--pd:2.7s"/>
+<path d="M 480 280 L 440 400 L 520 400 L 680 400 L 680 480 L 760 480 L 800 480 L 680 480 L 600 560 L 640 760" style="--pd:3.6s"/>
+<path d="M 440 200 L 240 160 L 320 200" style="--pd:4.5s"/>
+<path d="M 1320 400 L 1280 280 L 1280 400 L 1280 480 L 1280 640 L 1280 480 L 1280 400 L 1280 320 L 1320 240" style="--pd:5.4s"/>
+<path d="M 880 440 L 920 400 L 920 280 L 1000 200 L 1080 200 L 1000 200 L 920 200 L 800 200 L 720 280 L 760 480" style="--pd:6.3s"/>
+</g>
+<g class="pc-pad">
+<rect x="512" y="512" width="16" height="16" rx="2"/>
+<rect x="352" y="112" width="16" height="16" rx="2"/>
+<rect x="1272" y="552" width="16" height="16" rx="2"/>
+<rect x="592" y="152" width="16" height="16" rx="2"/>
+<rect x="472" y="272" width="16" height="16" rx="2"/>
+<rect x="432" y="192" width="16" height="16" rx="2"/>
+<rect x="1312" y="392" width="16" height="16" rx="2"/>
+<rect x="872" y="432" width="16" height="16" rx="2"/>
+</g>
+<g class="pc-via">
+<circle cx="480" cy="600" r="3.4"/>
+<circle class="pc-core" cx="480" cy="600" r="1.3"/>
+<circle cx="400" cy="600" r="3.4"/>
+<circle class="pc-core" cx="400" cy="600" r="1.3"/>
+<circle cx="440" cy="600" r="3.4"/>
+<circle class="pc-core" cx="440" cy="600" r="1.3"/>
+<circle cx="520" cy="600" r="3.4"/>
+<circle class="pc-core" cx="520" cy="600" r="1.3"/>
+<circle cx="320" cy="280" r="3.4"/>
+<circle class="pc-core" cx="320" cy="280" r="1.3"/>
+<circle cx="240" cy="280" r="3.4"/>
+<circle class="pc-core" cx="240" cy="280" r="1.3"/>
+<circle cx="160" cy="280" r="3.4"/>
+<circle class="pc-core" cx="160" cy="280" r="1.3"/>
+<circle cx="80" cy="360" r="3.4"/>
+<circle class="pc-core" cx="80" cy="360" r="1.3"/>
+<circle cx="80" cy="520" r="3.4"/>
+<circle class="pc-core" cx="80" cy="520" r="1.3"/>
+<circle cx="160" cy="520" r="3.4"/>
+<circle class="pc-core" cx="160" cy="520" r="1.3"/>
+<circle cx="280" cy="520" r="3.4"/>
+<circle class="pc-core" cx="280" cy="520" r="1.3"/>
+<circle cx="240" cy="520" r="3.4"/>
+<circle class="pc-core" cx="240" cy="520" r="1.3"/>
+<circle cx="160" cy="600" r="3.4"/>
+<circle class="pc-core" cx="160" cy="600" r="1.3"/>
+<circle cx="160" cy="720" r="3.4"/>
+<circle class="pc-core" cx="160" cy="720" r="1.3"/>
+<circle cx="1200" cy="520" r="3.4"/>
+<circle class="pc-core" cx="1200" cy="520" r="1.3"/>
+<circle cx="1120" cy="520" r="3.4"/>
+<circle class="pc-core" cx="1120" cy="520" r="1.3"/>
+<circle cx="960" cy="520" r="3.4"/>
+<circle class="pc-core" cx="960" cy="520" r="1.3"/>
+<circle cx="880" cy="600" r="3.4"/>
+<circle class="pc-core" cx="880" cy="600" r="1.3"/>
+<circle cx="880" cy="680" r="3.4"/>
+<circle class="pc-core" cx="880" cy="680" r="1.3"/>
+<circle cx="960" cy="680" r="3.4"/>
+<circle class="pc-core" cx="960" cy="680" r="1.3"/>
+<circle cx="720" cy="120" r="3.4"/>
+<circle class="pc-core" cx="720" cy="120" r="1.3"/>
+<circle cx="600" cy="120" r="3.4"/>
+<circle class="pc-core" cx="600" cy="120" r="1.3"/>
+<circle cx="520" cy="200" r="3.4"/>
+<circle class="pc-core" cx="520" cy="200" r="1.3"/>
+<circle cx="520" cy="280" r="3.4"/>
+<circle class="pc-core" cx="520" cy="280" r="1.3"/>
+<circle cx="600" cy="280" r="3.4"/>
+<circle class="pc-core" cx="600" cy="280" r="1.3"/>
+<circle cx="440" cy="400" r="3.4"/>
+<circle class="pc-core" cx="440" cy="400" r="1.3"/>
+<circle cx="520" cy="400" r="3.4"/>
+<circle class="pc-core" cx="520" cy="400" r="1.3"/>
+<circle cx="680" cy="400" r="3.4"/>
+<circle class="pc-core" cx="680" cy="400" r="1.3"/>
+<circle cx="680" cy="480" r="3.4"/>
+<circle class="pc-core" cx="680" cy="480" r="1.3"/>
+<circle cx="760" cy="480" r="3.4"/>
+<circle class="pc-core" cx="760" cy="480" r="1.3"/>
+<circle cx="800" cy="480" r="3.4"/>
+<circle class="pc-core" cx="800" cy="480" r="1.3"/>
+<circle cx="680" cy="480" r="3.4"/>
+<circle class="pc-core" cx="680" cy="480" r="1.3"/>
+<circle cx="600" cy="560" r="3.4"/>
+<circle class="pc-core" cx="600" cy="560" r="1.3"/>
+<circle cx="240" cy="160" r="3.4"/>
+<circle class="pc-core" cx="240" cy="160" r="1.3"/>
+<circle cx="1280" cy="280" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="280" r="1.3"/>
+<circle cx="1280" cy="400" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="400" r="1.3"/>
+<circle cx="1280" cy="480" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="480" r="1.3"/>
+<circle cx="1280" cy="640" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="640" r="1.3"/>
+<circle cx="1280" cy="480" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="480" r="1.3"/>
+<circle cx="1280" cy="400" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="400" r="1.3"/>
+<circle cx="1280" cy="320" r="3.4"/>
+<circle class="pc-core" cx="1280" cy="320" r="1.3"/>
+<circle cx="920" cy="400" r="3.4"/>
+<circle class="pc-core" cx="920" cy="400" r="1.3"/>
+<circle cx="920" cy="280" r="3.4"/>
+<circle class="pc-core" cx="920" cy="280" r="1.3"/>
+<circle cx="1000" cy="200" r="3.4"/>
+<circle class="pc-core" cx="1000" cy="200" r="1.3"/>
+<circle cx="1080" cy="200" r="3.4"/>
+<circle class="pc-core" cx="1080" cy="200" r="1.3"/>
+<circle cx="1000" cy="200" r="3.4"/>
+<circle class="pc-core" cx="1000" cy="200" r="1.3"/>
+<circle cx="920" cy="200" r="3.4"/>
+<circle class="pc-core" cx="920" cy="200" r="1.3"/>
+<circle cx="800" cy="200" r="3.4"/>
+<circle class="pc-core" cx="800" cy="200" r="1.3"/>
+<circle cx="720" cy="280" r="3.4"/>
+<circle class="pc-core" cx="720" cy="280" r="1.3"/>
+</g>
+</svg></div>
+    <div class="shell">
+      <div class="section-head reveal">
+        <span class="section-num">05</span>
+        <h2 class="section-title">Contato</h2>
+        <p class="section-note">
+          Aberto a oportunidades de estágio em backend e engenharia de software.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-primary reveal">
+          <a class="contact-email" href="mailto:lucatelinic23@gmail.com">lucatelinic23@gmail.com</a>
+          <button class="btn btn-copy" type="button" data-copy="lucatelinic23@gmail.com">
+            Copiar e-mail
+          </button>
+          <p class="copy-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <ul class="contact-links reveal">
+          <li>
+            <span class="cl-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/luca-telini-crozara-19a609315" target="_blank" rel="noopener noreferrer">/in/luca-telini-crozara</a>
+          </li>
+          <li>
+            <span class="cl-label">GitHub</span>
+            <a href="https://github.com/telinii" target="_blank" rel="noopener noreferrer">github.com/telinii</a>
+          </li>
+          <li>
+            <span class="cl-label">Instagram</span>
+            <a href="https://instagram.com/luca.telini" target="_blank" rel="noopener noreferrer">@luca.telini</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p class="footer-copy">
+      © <span id="year">2026</span> Luca Telini Crozara
+    </p>
+    <p class="footer-side">
+      <span class="clock" id="clock" aria-live="off"></span>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema claro e escuro">
+        <span data-theme-label>Tema claro</span>
+      </button>
+      <a href="#topo" class="to-top">Voltar ao topo</a>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

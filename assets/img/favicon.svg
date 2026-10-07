@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LTC">
+  <rect width="64" height="64" rx="4" fill="#0b1622"/>
+  <text x="32" y="43" font-family="Georgia, 'Times New Roman', serif" font-size="26"
+        fill="#e9e6df" text-anchor="middle" letter-spacing="1">LTC</text>
+  <rect x="18" y="50" width="28" height="1.5" fill="#d8b26a"/>
+</svg>

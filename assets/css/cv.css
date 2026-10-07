@@ -1,0 +1,250 @@
+/* =============================================================
+   Currículo — Luca Telini Crozara
+   Pensado para impressão: fundo branco, tinta escura, sem áreas
+   pesadas. Mantém o DNA do site (serifa + monoespaçada + grid),
+   não a cor — currículo escuro sai ilegível no papel.
+
+   Tamanho A4 com margem de 16 mm, que é o padrão seguro de
+   impressora doméstica e não estoura nenhuma folha de gráfica.
+   ============================================================= */
+
+:root {
+  --serif: "Newsreader", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  --ink: #14161a;
+  --ink-dim: #4a4f58;
+  --ink-faint: #7c828c;
+  --rule: #d8dade;
+  --accent: #6b4f14;      /* dourado escurecido: legível em impressão */
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #e9e9ec;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 9.4pt;
+  line-height: 1.42;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Página ---------- */
+
+.cv {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  padding: 16mm 16mm 18mm;
+  background: #fff;
+}
+
+@media screen {
+  .cv { box-shadow: 0 1px 3px rgba(0, 0, 0, .16); }
+}
+
+/* ---------- Cabeçalho ---------- */
+
+.cv-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: .6rem 2rem;
+  padding-bottom: .65rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.cv-identity h1 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 23pt;
+  line-height: 1.05;
+  letter-spacing: -.018em;
+  margin: 0;
+}
+
+.cv-role {
+  margin: .3rem 0 0;
+  font-family: var(--mono);
+  font-size: 8pt;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.cv-contact {
+  display: flex;
+  flex-direction: column;
+  gap: .12rem;
+  font-size: 8.6pt;
+  line-height: 1.45;
+  color: var(--ink-dim);
+  font-style: normal;
+  text-align: right;
+}
+.cv-contact a { border-bottom: 1px solid var(--rule); }
+.cv-contact a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ---------- Seções ---------- */
+
+.cv-section {
+  margin-top: .82rem;
+  padding-top: .42rem;
+  border-top: 1px solid var(--rule);
+}
+.cv-section--first { margin-top: .6rem; }
+
+.cv-section h2 {
+  font-family: var(--mono);
+  font-size: 8pt;
+  font-weight: 500;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 .48rem;
+}
+
+/* ---------- Entradas ---------- */
+
+.entry + .entry {
+  margin-top: .55rem;
+  padding-top: .5rem;
+  border-top: 1px dotted var(--rule);
+}
+
+.entry-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.entry-head h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 11.5pt;
+  letter-spacing: -.005em;
+  margin: 0;
+}
+
+.entry-date {
+  flex: none;
+  font-family: var(--mono);
+  font-size: 8pt;
+  letter-spacing: .06em;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+.entry-note {
+  margin: .08rem 0 .36rem;
+  font-family: var(--mono);
+  font-size: 7.6pt;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.entry p { margin: 0 0 .28rem; }
+
+.entry-links {
+  font-family: var(--mono);
+  font-size: 8pt;
+  color: var(--ink-faint);
+}
+.entry-links a { border-bottom: 1px solid var(--rule); }
+.entry-links a:hover { color: var(--accent); }
+
+/* ---------- Marcadores ---------- */
+
+.bullets {
+  margin: .38rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.bullets li {
+  position: relative;
+  padding-left: .9rem;
+  margin-bottom: .22rem;
+  color: var(--ink-dim);
+}
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .58em;
+  width: 4px;
+  height: 1px;
+  background: var(--ink-faint);
+}
+.bullets strong { color: var(--ink); font-weight: 500; }
+
+/* ---------- Tecnologias ---------- */
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .5rem 2rem;
+}
+.tech-grid h3 {
+  font-family: var(--mono);
+  font-size: 7.6pt;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0 0 .15rem;
+}
+.tech-grid p { margin: 0; font-size: 8.8pt; }
+
+/* ---------- Rodapé (bloco opcional) ---------- */
+
+/* `:empty` não serve aqui: um comentário HTML dentro da tag já conta
+   como conteúdo e a régua apareceria sozinha no fim da página. */
+.cv-foot--vazio { display: none; }
+.cv-foot {
+  margin-top: 1.1rem;
+  padding-top: .5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 8.8pt;
+  color: var(--ink-dim);
+}
+.cv-foot p { margin: 0 0 .2rem; }
+
+a { text-decoration: none; }
+
+/* ---------- Impressão ---------- */
+
+@page {
+  size: A4;
+  margin: 16mm;
+}
+
+@media print {
+  html, body {
+    background: #fff;
+    font-size: 9.4pt;
+  }
+  .cv {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+  /* Evita corte de bloco no meio da folha */
+  .entry, .cv-section, .cv-head { break-inside: avoid; }
+  h2, h3 { break-after: avoid; }
+  a { color: var(--ink-dim); }
+}
